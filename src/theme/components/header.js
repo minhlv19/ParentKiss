@@ -1,6 +1,5 @@
 import React from 'react'
-import {Image, TouchableOpacity, Dimensions} from 'react-native'
-import Icon from "react-native-vector-icons/Ionicons";
+import {Image, TouchableOpacity, Dimensions} from 'react-native';
 import {View} from "react-native";
 const deviceWidth = Dimensions.get("window").width;
 export class Logo extends React.Component{
@@ -10,8 +9,8 @@ export class Logo extends React.Component{
                 <Image
                     source={require('../../asset/images/logo.png')}
                     resizeMode = "contain"
-                    style = {{width: 140,
-                        marginTop: 15,alignSelf:'center'}}
+                    style = {{width: 50,height:50,
+                        alignSelf:'center'}}
                 />
             </View>
         )

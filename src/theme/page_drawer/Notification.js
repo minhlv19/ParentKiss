@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Image, Text, TouchableOpacity} from 'react-native';
 import {View} from 'react-native';
-import HeaderBackButton from 'react-navigation-stack';
 import {Logo} from '../components/header';
 
 class Notification extends Component {
