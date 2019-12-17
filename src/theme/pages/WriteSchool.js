@@ -8,7 +8,8 @@ class WriteSchool extends Component {
             headerLeft: <MenuButton onPress={() => navigation.openDrawer()}/>,
             headerTitle: <Logo/>,
             headerBackTitle: "Home",
-            headerLayoutPreset: "center"
+            headerLayoutPreset: "center",
+
         };
     };
 
