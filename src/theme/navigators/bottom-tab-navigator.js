@@ -1,7 +1,15 @@
-import React from "react";
-import Ionicons from "react-native-vector-icons/Ionicons";
+import React from 'react';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
-import {HomeNavigator,CalendarNavigator,NoticeBroardNavigator,PaymentsNavigator,WriteSchoolNavigator} from './screen-stack-navigator';
+import {
+    HomeNavigator,
+    CalendarNavigator,
+    NoticeBroardNavigator,
+    PaymentsNavigator,
+    WriteSchoolNavigator,
+} from './screen-stack-navigator';
+import {Image} from 'react-native';
+
 const BottomTabNavigator = createBottomTabNavigator(
     {
         Home: {
@@ -47,19 +55,79 @@ const BottomTabNavigator = createBottomTabNavigator(
                 let IconComponent = Ionicons;
                 let iconName;
                 if (routeName === 'Home') {
-                    iconName = `ios-information-circle${focused ? '' : '-outline'}`;
+                    return (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../asset/images/home_click.png')
+                                    : require('../../asset/images/home.png')
+                            }
+                            style={{
+                                width: 20,
+                                height: 20,
+                            }}
+                        />
+                    );
                 } else if (routeName === 'WriteSchool') {
-                    iconName = `ios-checkmark-circle${focused ? '' : '-outline'}`;
+                    return (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../asset/images/write_click.png')
+                                    : require('../../asset/images/write.png')
+                            }
+                            style={{
+                                width: 20,
+                                height: 20,
+                            }}
+                        />
+                    );
                 } else if (routeName === 'Notice') {
-                    iconName = `ios-checkmark-circle${focused ? '' : '-outline'}`;
+                    return (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../asset/images/noticeboard_click.png')
+                                    : require('../../asset/images/noticeboard.png')
+                            }
+                            style={{
+                                width: 20,
+                                height: 20,
+                            }}
+                        />
+                    );
                 } else if (routeName === 'Calendar') {
-                    iconName = `ios-checkmark-circle${focused ? '' : '-outline'}`;
+                    return (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../asset/images/calendar_click.png')
+                                    : require('../../asset/images/calendar.png')
+                            }
+                            style={{
+                                width: 20,
+                                height: 20,
+                            }}
+                        />
+                    );
                 } else if (routeName === 'Payment') {
-                    iconName = `ios-checkmark-circle${focused ? '' : '-outline'}`;
+                    return (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../asset/images/payment_click.png')
+                                    : require('../../asset/images/payments.png')
+                            }
+                            style={{
+                                width: 20,
+                                height: 20,
+                            }}
+                        />
+                    );
                 }
 
-                return <IconComponent name={iconName} size={25} color={tintColor}/>;
-            },
+
+            }
         }),
         tabBarOptions: {
             activeTintColor: '#42f44b',
