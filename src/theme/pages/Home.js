@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {View, Text, Picker, StyleSheet} from 'react-native';
-import {Logo, MenuButton} from '../components/header';
 
 
 class Home extends Component {
