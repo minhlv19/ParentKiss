@@ -18,7 +18,7 @@ import {
 import {Text, View, SafeAreaView, ScrollView, Image, StatusBar} from 'react-native';
 
 const CustomDrawer = (props) => (
-    <View>
+
 
         <SafeAreaView style={{flex: 1}}>
 
@@ -46,7 +46,7 @@ const CustomDrawer = (props) => (
                 <DrawerItems {...props}/>
             </ScrollView>
         </SafeAreaView>
-    </View>
+
 );
 const DrawerNavigator = createDrawerNavigator({
 

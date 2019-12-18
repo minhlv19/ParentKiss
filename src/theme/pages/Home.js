@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import {View, Text, Picker, StyleSheet} from 'react-native';
 
+import {MenuButton} from '../components/header';
+import {Logo} from '../components/header';
+
 
 class Home extends Component {
     static navigationOptions = ({ navigation }) => {

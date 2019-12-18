@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
+import {Text, View} from 'react-native';
 
 class RateTheApp extends Component {
     render() {
         return (
-            <div>
-
-            </div>
+          <View>
+              <Text>xvcbnm</Text>
+          </View>
         );
     }
 }
