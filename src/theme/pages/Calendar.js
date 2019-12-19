@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {Logo, MenuButton} from '../components/header';
-import {Colors} from "react-native/Libraries/NewAppScreen";
-
+import AllFragment from "../fragment/All_fragment";
+import Eventsfragment from "../fragment/Events_fragment";
+import Holidaysfragment from "../fragment/Holidays_fragment";
 class Calendar extends Component {
+
     static navigationOptions = ({navigation}) => {
         return {
             headerLeft: <MenuButton onPress={() => navigation.openDrawer()}/>,
@@ -12,26 +14,38 @@ class Calendar extends Component {
             headerLayoutPreset: "center"
         };
     };
-
+    constructor(props) {
+        super(props);
+        this.state = { val: 1 };
+    }
+    renderElement() {
+        if (this.state.val === 1) {
+            return <AllFragment />;
+        } else if (this.state.val === 2) {
+            return <Eventsfragment />;
+        } else {
+            return <Holidaysfragment />;
+        }
+    }
     render() {
         return (
             <View style={{flex: 1 }}>
                 <View style={{flexDirection: 'row', justifyContent: 'center',}}>
-                    <TouchableOpacity>
-                        <View style={styles.ButtontouchableOpacity}>
+                    <TouchableOpacity onPress={() => this.setState({ val: 1 })}>
+                        <View style={styles.ButtontouchableOpacity} bac>
                             <Text style={styles.buttontext_a}>A</Text>
                             <Text
                                 style={styles.buttontext_b}>All</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.setState({ val: 2 })}>
                         <View style={styles.ButtontouchableOpacity}>
                             <Text style={styles.buttontext_a}>E</Text>
                             <Text
                                 style={styles.buttontext_b}>Events</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.setState({ val: 3 })}>
                         <View style={styles.ButtontouchableOpacity}>
                             <Text style={styles.buttontext_a}>H</Text>
                             <Text
@@ -40,7 +54,7 @@ class Calendar extends Component {
                     </TouchableOpacity>
                 </View>
                 <View>
-                    <Text>SDFGHJK</Text>
+                    {this.renderElement()}
                 </View>
             </View>
         );

@@ -17,6 +17,10 @@ import RefreshAccount from '../page_drawer/Refresh-Account';
 import RouteTracker from '../page_drawer/Route-Tracker';
 import TestNotification from '../page_drawer/Test-Notification';
 
+import AllFragment from "../fragment/All_fragment";
+import EventsFragment from "../fragment/Events_fragment";
+import HolidaysFragment from "../fragment/Holidays_fragment";
+
 export const CalendarNavigator = createStackNavigator({
     Calendar: { screen: Calendar }
 });
@@ -65,3 +69,15 @@ export const TestNotificationNavigator = createStackNavigator({
 export const NotificationNavigator = createStackNavigator({
     Notification: { screen: Notification }
 });
+
+//Fregment
+export const AllFragmentNavigator = createStackNavigator({
+    AllFragment: { screen: AllFragment }
+});
+export const EventsFragmentNavigator = createStackNavigator({
+    EventsFragment: { screen: EventsFragment }
+});
+export const HolidaysFragmentNavigator = createStackNavigator({
+    HolidaysFragment: { screen: HolidaysFragment }
+});
+
