@@ -1,10 +1,22 @@
 import React, {Component} from 'react';
 import {View, Text, Picker, StyleSheet} from 'react-native';
-
+import ModalDropdown from 'react-native-modal-dropdown';
 import {MenuButton} from '../components/header';
 import {Logo} from '../components/header';
 
-
+const SELECT_ACTIVITY=[
+    'All Activities',
+    'Check-In-Out',
+    'Diary' ,
+    'Food' ,
+    'Health' ,
+    'Photo' ,
+    'Potty' ,
+    'Star' ,
+    'Sleep' ,
+    'Video' ,
+    'Fee'
+];
 class Home extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
@@ -24,32 +36,15 @@ class Home extends Component {
 
         return (
             <View>
-                <View style={{flex: 1, flexDirection: 'row'}}>
-                    <View style={styles.textpicek}>
-                        <Picker
-                            selectedValue={this.state.language}
-                            style={{}}
-                            onValueChange={(itemValue, itemIndex) =>
-                                this.setState({language: itemValue})
-                            }
-                        >
-                            <Picker.Item label="" value=""/>
-                            <Picker.Item label="Java" value="java1122"/>
-                            <Picker.Item label="Android 1" value="java12"/>
-                        </Picker>
-                    </View>
-                    <View style={styles.textpicek}>
-                        <Picker
-                            style={{flex: 1}}
-                            selectedValue={this.state.language}
-                            onValueChange={(itemValue1, itemIndex) =>
-                                this.setState({language: itemValue1})
-                            }>
-                            <Picker.Item label="Java 1" value="java1"/>
-                            <Picker.Item label="JavaScript 2" value="js1"/>
-                        </Picker>
-                    </View>
-                </View>
+               <ModalDropdown
+                   style={styles.textpicek}
+                   options={SELECT_ACTIVITY}
+
+                   defaultValue={'All Activities'}
+                   dropdownStyle={styles.downText}
+               >
+
+               </ModalDropdown>
 
                 {/*<Text>SDFGHJK</Text>*/}
             </View>
@@ -60,6 +55,20 @@ class Home extends Component {
 export default Home;
 const styles = StyleSheet.create({
     textpicek: {
-        flex: 1, margin: 10, backgroundColor: '#CFCFCF', width: 100, height: 40
+width: '40%',
+        borderWidth:0.2,
+        borderRadius:5,
+        height: 40,
+        justifyContent:'center',
+        marginLeft:10,
+        textAlign:'center'
+
+
     },
+    downText:{
+        width: '40%',
+        height: 250,
+        borderWidth: 2,
+        left:0
+    }
 })

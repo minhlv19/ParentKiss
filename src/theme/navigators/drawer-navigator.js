@@ -55,7 +55,7 @@ const DrawerNavigator = createDrawerNavigator({
     'Tuyến xe bus': RouteTrackerNavigator,
     'QR Code': QRCodeNavigator,
     'Cài đặt thông báo': NotificationNavigator,
-    'kiểm tra thông báo': TestNotificationNavigator,
+    'Kiểm tra thông báo': TestNotificationNavigator,
     'Hỗ trợ': HelpNavigator,
     'Đánh giá app': RateTheAppNavigator,
     'Phản hồi': FeedbackNavigator,
