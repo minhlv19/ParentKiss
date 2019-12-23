@@ -1,6 +1,6 @@
 import React from 'react';
 import {createDrawerNavigator, DrawerItems} from 'react-navigation-drawer';
-import {createAppContainer} from 'react-navigation';
+import {createAppContainer,} from 'react-navigation';
 import BottomTabNavigator from './bottom-tab-navigator';
 import {
     FeedbackNavigator,
@@ -18,34 +18,34 @@ import {
 import {Text, View, SafeAreaView, ScrollView, Image, StatusBar} from 'react-native';
 
 const CustomDrawer = (props) => (
+    <SafeAreaView style={{flex: 1}}>
 
-
-        <SafeAreaView style={{flex: 1}}>
-
-            <View style={{height: 200, backgroundColor: 'white', borderBottomWidth: 0.2}}>
-                <View style={{flexDirection: 'row'}}>
-                    <Image source={require('../../asset/images/logo.png')}
-                           style={{width: 120, height: 120, borderRadius: 60}}/>
-                    <View style={{justifyContent: 'center'}}>
-                        <View>
-                            <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82'}}>Thanh Minh</Text>
-                        </View>
-                        <View style={{marginTop: 10}}>
-                            <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82'}}>0389588631</Text>
-                        </View>
+        <View style={{height: 200, backgroundColor: 'white', borderBottomWidth: 0.2}}>
+            <View style={{flexDirection: 'row'}}>
+                <Image source={require('../../asset/images/logo.png')}
+                       style={{width: 120, height: 120, borderRadius: 60}}/>
+                <View style={{justifyContent: 'center'}}>
+                    <View>
+                        <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82'}}>Thanh Minh</Text>
+                    </View>
+                    <View style={{marginTop: 10}}>
+                        <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82'}}>0389588631</Text>
                     </View>
                 </View>
-                <View>
-                    <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82'}}>K3 PRO</Text>
-                </View>
-                <View>
-                    <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82'}}>Notification History</Text>
-                </View>
             </View>
-            <ScrollView>
-                <DrawerItems {...props}/>
-            </ScrollView>
-        </SafeAreaView>
+            <View style={{flex: 1, flexDirection: 'row', marginLeft: 15}}>
+                <Image style={{height: 25, width: 25}} source={require('../../asset/images/bell.png')}/>
+                <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82',marginLeft:10}}>K3 PRO</Text>
+            </View>
+            <View style={{flex: 1, marginLeft: 15,flexDirection: 'row'}}>
+                <Image style={{height: 25, width: 25}} source={require('../../asset/images/house.png')}/>
+                <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82',marginLeft:10}}>Notification History</Text>
+            </View>
+        </View>
+        <ScrollView>
+            <DrawerItems {...props}/>
+        </ScrollView>
+    </SafeAreaView>
 
 );
 const DrawerNavigator = createDrawerNavigator({

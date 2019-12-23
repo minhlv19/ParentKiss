@@ -5,6 +5,7 @@ import {Text, View,TouchableOpacity,Image} from 'react-native';
 class RouteTracker extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
+
             headerLeft: <TouchableOpacity  onPress={() => navigation.goBack(null)} >
                 <Image
                     source={require('../../asset/images/back.png')}
@@ -13,12 +14,13 @@ class RouteTracker extends Component {
             </TouchableOpacity>,
             headerTitle: <Logo />,
             headerBackTitle: "Settings",
-            headerLayoutPreset: "center"
+            headerLayoutPreset: "center",
+
         };
     };
     render() {
         return (
-            <View><Text>this is Feedback</Text></View>
+            <View><Text>this is Feedback AS</Text></View>
         );
     }
 }
