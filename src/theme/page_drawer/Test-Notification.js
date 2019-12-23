@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import {Image, Text, TouchableOpacity} from 'react-native';
-import {View} from 'react-native';
 import {Logo} from '../components/header';
+import {Text, View,TouchableOpacity,Image} from 'react-native';
 
-class Notification extends Component {
+class TestNotification extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
             headerLeft: <TouchableOpacity  onPress={() => navigation.goBack(null)} >
@@ -17,21 +16,11 @@ class Notification extends Component {
             headerLayoutPreset: "center"
         };
     };
-
     render() {
-        const { selectedOption } = this.state;
         return (
-           <View>
-               <View contentContainerStyle={{
-                  flex:1,
-                  alignItems:'center',
-                  justifyContent:'center'
-               }}>
-
-               </View>
-           </View>
+            <View><Text>this is Feedback</Text></View>
         );
     }
 }
 
-export default Notification;
+export default TestNotification;
