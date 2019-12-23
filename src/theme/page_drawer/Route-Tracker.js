@@ -5,7 +5,6 @@ import {Text, View,TouchableOpacity,Image} from 'react-native';
 class RouteTracker extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
-
             headerLeft: <TouchableOpacity  onPress={() => navigation.goBack(null)} >
                 <Image
                     source={require('../../asset/images/back.png')}
