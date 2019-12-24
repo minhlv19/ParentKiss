@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import {View, Text, TouchableOpacity, StyleSheet, ImageBackground} from 'react-native';
 import {Logo, MenuButton} from '../components/header';
 
 class WriteSchool extends Component {
@@ -15,16 +15,19 @@ class WriteSchool extends Component {
 
     render() {
         return (
-            <View style={styles.rowView}>
-                <View style={{flex: 3}}>
-                    <Text>SDFGHJK</Text>
-                </View>
-                <TouchableOpacity style={styles.buttonTouchableOpacity}>
-                    <View style={styles.buttonTouchableOpacityView}>
-                        <Text style={styles.styletext}>+</Text>
+            <ImageBackground style={{flex: 1}}
+                             source={{uri: 'https://i.pinimg.com/736x/01/34/fb/0134fb3cf95575a66a10397aa0f24c46.jpg'}}>
+                <View style={styles.rowView}>
+                    <View style={{flex: 3}}>
+                        {/*<Text>SDFGHJK</Text>*/}
                     </View>
-                </TouchableOpacity>
-            </View>
+                    <TouchableOpacity style={styles.buttonTouchableOpacity}>
+                        <View style={styles.buttonTouchableOpacityView}>
+                            <Text style={styles.styletext}>+</Text>
+                        </View>
+                    </TouchableOpacity>
+                </View>
+            </ImageBackground>
         );
     }
 }

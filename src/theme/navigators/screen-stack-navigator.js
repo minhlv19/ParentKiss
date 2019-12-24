@@ -61,7 +61,7 @@ export const RefreshAccountNavigator = createStackNavigator({
     RefreshAccount: { screen: RefreshAccount }
 });
 export const RouteTrackerNavigator = createStackNavigator({
-    RouteTracker: { screen: RouteTracker }
+    RouteTracker: { screen: RouteTracker}
 });
 export const TestNotificationNavigator = createStackNavigator({
     TestNotification: { screen: TestNotification }

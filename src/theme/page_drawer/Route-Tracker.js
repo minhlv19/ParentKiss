@@ -13,12 +13,13 @@ class RouteTracker extends Component {
             </TouchableOpacity>,
             headerTitle: <Logo />,
             headerBackTitle: "Settings",
-            headerLayoutPreset: "center"
+            headerLayoutPreset: "center",
+
         };
     };
     render() {
         return (
-            <View><Text>this is Feedback</Text></View>
+            <View><Text>this is Feedback AS</Text></View>
         );
     }
 }
