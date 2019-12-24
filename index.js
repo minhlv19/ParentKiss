@@ -10,4 +10,4 @@ console.disableYellowBox=true;
 //tao click cho DrawerNavigator
 import {gestureHandlerRootHOC} from 'react-native-gesture-handler';
 
-AppRegistry.registerComponent(appName, () => gestureHandlerRootHOC(Main));
+AppRegistry.registerComponent(appName, () => gestureHandlerRootHOC(Main) );

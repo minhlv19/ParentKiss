@@ -4,6 +4,7 @@ import {Logo, MenuButton} from '../components/header';
 
 class WriteSchool extends Component {
     static navigationOptions = ({navigation}) => {
+
         return {
             headerLeft: <MenuButton onPress={() => navigation.openDrawer()}/>,
             headerTitle: <Logo/>,
@@ -12,6 +13,9 @@ class WriteSchool extends Component {
 
         };
     };
+    constructor(props) {
+        super(props);
+    }
 
     render() {
         return (
@@ -21,7 +25,8 @@ class WriteSchool extends Component {
                     <View style={{flex: 3}}>
                         {/*<Text>SDFGHJK</Text>*/}
                     </View>
-                    <TouchableOpacity style={styles.buttonTouchableOpacity}>
+                    <TouchableOpacity style={styles.buttonTouchableOpacity}
+                    onPress={()=>this.props.navigation.navigate('DetailWriteScreen')}>
                         <View style={styles.buttonTouchableOpacityView}>
                             <Text style={styles.styletext}>+</Text>
                         </View>

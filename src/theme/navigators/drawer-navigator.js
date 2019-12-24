@@ -64,6 +64,7 @@ const DrawerNavigator = createDrawerNavigator({
     'Thoát': LogoutNavigator,
 }, {
     contentComponent: CustomDrawer,
+    drawerLockMode: 'unlocked'
 
 });
 const Drawer = createAppContainer(DrawerNavigator);

@@ -15,25 +15,25 @@ const BottomTabNavigator = createBottomTabNavigator(
         Home: {
             screen: HomeNavigator,
             navigationOptions: {
-                tabBarLabel: 'Home',
+                tabBarLabel: 'Trang Chủ',
             },
         },
         Notice: {
             screen: NoticeBroardNavigator,
             navigationOptions: {
-                tabBarLabel: 'Notice Broard',
+                tabBarLabel: 'Thông Báo',
             },
         },
         Calendar: {
             screen: CalendarNavigator,
             navigationOptions: {
-                tabBarLabel: 'Calendar',
+                tabBarLabel: 'Lịch',
             },
         },
         WriteSchool: {
             screen: WriteSchoolNavigator,
             navigationOptions: {
-                tabBarLabel: 'Write to School',
+                tabBarLabel: 'Phản Hồi',
             },
         },
 
@@ -41,7 +41,7 @@ const BottomTabNavigator = createBottomTabNavigator(
         Payment: {
             screen: PaymentsNavigator,
             navigationOptions: {
-                tabBarLabel: 'Payments',
+                tabBarLabel: 'Thanh Toán',
             },
         },
 
@@ -135,4 +135,5 @@ const BottomTabNavigator = createBottomTabNavigator(
         },
     },
 );
+
 export default BottomTabNavigator;

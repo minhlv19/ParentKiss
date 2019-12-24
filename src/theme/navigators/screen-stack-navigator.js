@@ -20,7 +20,11 @@ import TestNotification from '../page_drawer/Test-Notification';
 import AllFragment from "../fragment/All_fragment";
 import EventsFragment from "../fragment/Events_fragment";
 import HolidaysFragment from "../fragment/Holidays_fragment";
+import DetailWriteScreen from '../detail/Detail_write_screen';
 
+// export const DetailWriteScreenNavigator =createStackNavigator({
+//
+// });
 export const CalendarNavigator = createStackNavigator({
     Calendar: { screen: Calendar }
 });
@@ -34,8 +38,28 @@ export const PaymentsNavigator = createStackNavigator({
     Payments: { screen: Payments }
 });
 export const WriteSchoolNavigator = createStackNavigator({
-    WriteSchool: { screen: WriteSchool }
-});
+    WriteSchool: { screen: WriteSchool },
+    DetailWriteScreen:{screen:DetailWriteScreen}
+
+},
+    {
+        navigationOptions:  ({navigation}) => {
+            let tabBarVisible;
+            if (navigation.state.routes.length >1){
+                navigation.state.routes.map(route =>{
+                    if (route.routeName !== 'WriteSchool'){
+                        tabBarVisible = false
+                    }else {
+                        tabBarVisible = true
+                    }
+                })
+            }
+            return {
+                tabBarVisible,
+            }
+        }
+    }
+    );
 export const FeedbackNavigator = createStackNavigator({
     Feedback: { screen: Feedback }
 });
