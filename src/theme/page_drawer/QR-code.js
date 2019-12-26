@@ -9,7 +9,7 @@ class QRCode extends Component {
             headerLeft: <TouchableOpacity onPress={() => navigation.goBack(null)}>
                 <Image
                     source={require('../../asset/images/back.png')}
-                    style={{width: 40, height: 40, marginLeft: 10}}
+                    style={{width:20,height:20,marginLeft:10}}
                 />
             </TouchableOpacity>,
                 headerTitle: <Logo/>,

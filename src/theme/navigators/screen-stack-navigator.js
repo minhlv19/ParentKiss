@@ -24,7 +24,8 @@ import DetailWriteScreen from '../detail/Detail_write_screen';
 import NameNotification from "../page_drawer/Name_Notification";
 
 export const NameNotificationNavigator = createStackNavigator({
-    NameNotification: { screen: NameNotification }
+    NameNotification: { screen: NameNotification },
+
 });
 export const CalendarNavigator = createStackNavigator({
     Calendar: { screen: Calendar }

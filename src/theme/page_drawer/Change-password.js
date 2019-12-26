@@ -8,7 +8,7 @@ class ChangePassword extends Component {
             headerLeft: <TouchableOpacity onPress={() => navigation.goBack(null)}>
                 <Image
                     source={require('../../asset/images/back.png')}
-                    style={{width: 40, height: 40, marginLeft: 10}}
+                    style={{width:20,height:20,marginLeft:10}}
                 />
             </TouchableOpacity>,
             headerTitle: <Logo/>,
@@ -32,7 +32,7 @@ class ChangePassword extends Component {
                 <View style={styles.viewbutton}>
                     <View style={{width: '25%'}}></View>
                     <TouchableOpacity style={styles.textbutton}>
-                        <Text style={{textAlign: 'center', fontSize: 20,color:'#fff'}}> SUBMIT </Text>
+                        <Text style={{textAlign: 'center', fontSize: 20,color:'#fff',}}> SUBMIT </Text>
                     </TouchableOpacity>
                     <View style={{width: '25%'}}></View>
                 </View>
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         fontSize: 16,
         borderColor: '#606070',
+
     },
     viewbutton:{
         flex: 1,
