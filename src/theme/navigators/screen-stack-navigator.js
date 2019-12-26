@@ -20,7 +20,11 @@ import TestNotification from '../page_drawer/Test-Notification';
 import AllFragment from "../fragment/All_fragment";
 import EventsFragment from "../fragment/Events_fragment";
 import HolidaysFragment from "../fragment/Holidays_fragment";
+import NameNotification from "../page_drawer/Name_Notification";
 
+export const NameNotificationNavigator = createStackNavigator({
+    NameNotification: { screen: NameNotification }
+});
 export const CalendarNavigator = createStackNavigator({
     Calendar: { screen: Calendar }
 });

@@ -56,12 +56,6 @@ class Home extends Component {
         return (
             <ImageBackground style={{flex: 1}}
                              source={{uri: 'https://i.pinimg.com/564x/69/51/a7/6951a7e36f0490adaebe26ee5af09e7c.jpg'}}>
-                {/*<ScrollView*/}
-                {/*    contentContainerStyle={styles.scrollView}*/}
-                {/*    refreshControl={*/}
-                {/*        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />*/}
-                {/*    }*/}
-                {/*>*/}
                     <View style={{flex: 1,}}>
                         <View style={{
                             flexDirection: 'row',
@@ -128,7 +122,6 @@ class Home extends Component {
                             </View>
                         </View>
                     </View>
-                {/*</ScrollView>*/}
             </ImageBackground>
         );
     }
