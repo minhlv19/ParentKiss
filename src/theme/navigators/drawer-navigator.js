@@ -14,8 +14,10 @@ import {
     RefreshAccountNavigator,
     RouteTrackerNavigator,
     TestNotificationNavigator,
+    NameNotificationNavigator,
 } from './screen-stack-navigator';
-import {Text, View, SafeAreaView, ScrollView, Image, StatusBar} from 'react-native';
+import {Text, View, SafeAreaView, ScrollView, Image, StatusBar, TouchableOpacity} from 'react-native';
+import NameNotification from "../page_drawer/Name_Notification";
 
 const CustomDrawer = (props) => (
     <SafeAreaView style={{flex: 1}}>
@@ -33,14 +35,16 @@ const CustomDrawer = (props) => (
                     </View>
                 </View>
             </View>
-            <View style={{flex: 1, flexDirection: 'row', marginLeft: 15}}>
+            <TouchableOpacity style={{flex: 1, flexDirection: 'row', marginLeft: 15}}>
                 <Image style={{height: 25, width: 25}} source={require('../../asset/images/bell.png')}/>
-                <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82',marginLeft:10}}>K3 PRO</Text>
-            </View>
-            <View style={{flex: 1, marginLeft: 15,flexDirection: 'row'}}>
+                <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82', marginLeft: 10}}>K3 PRO</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={{flex: 1, marginLeft: 15, flexDirection: 'row'}} onPress={() => <NameNotificationNavigator/>}>
                 <Image style={{height: 25, width: 25}} source={require('../../asset/images/house.png')}/>
-                <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82',marginLeft:10}}>Notification History</Text>
-            </View>
+                <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82', marginLeft: 10}}>Notification
+                    History</Text>
+            </TouchableOpacity>
         </View>
         <ScrollView>
             <DrawerItems {...props}/>

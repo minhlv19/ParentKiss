@@ -4,7 +4,6 @@ import {Logo, MenuButton} from '../components/header';
 import AllFragment from "../fragment/All_fragment";
 import Eventsfragment from "../fragment/Events_fragment";
 import Holidaysfragment from "../fragment/Holidays_fragment";
-
 class Calendar extends Component {
 
     static navigationOptions = ({navigation}) => {

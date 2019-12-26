@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Logo} from '../components/header';
 import {Text, View,TouchableOpacity,Image} from 'react-native';
 
-class ReferVclass extends Component {
+class NameNotification extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
             headerLeft: <TouchableOpacity  onPress={() => navigation.goBack(null)} >
@@ -18,9 +18,9 @@ class ReferVclass extends Component {
     };
     render() {
         return (
-            <View><Text>this is Feedback</Text></View>
+            <View><Text>this is Name</Text></View>
         );
     }
 }
 
-export default ReferVclass;
+export default NameNotification;

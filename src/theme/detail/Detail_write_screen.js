@@ -22,6 +22,7 @@ class DetailWriteScreen extends Component {
     render() {
         return (
             <ScrollView>
+
             <View style={{flex:1}}>
                 <View style={{
                     flexDirection: 'row',
@@ -56,7 +57,8 @@ class DetailWriteScreen extends Component {
                 </View>
 
 
-            </View>
+
+                </View>
             </ScrollView>
 
         );

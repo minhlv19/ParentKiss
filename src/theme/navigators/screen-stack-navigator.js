@@ -21,10 +21,12 @@ import AllFragment from "../fragment/All_fragment";
 import EventsFragment from "../fragment/Events_fragment";
 import HolidaysFragment from "../fragment/Holidays_fragment";
 import DetailWriteScreen from '../detail/Detail_write_screen';
+import NameNotification from "../page_drawer/Name_Notification";
 
-// export const DetailWriteScreenNavigator =createStackNavigator({
-//
-// });
+export const NameNotificationNavigator = createStackNavigator({
+    NameNotification: { screen: NameNotification },
+
+});
 export const CalendarNavigator = createStackNavigator({
     Calendar: { screen: Calendar }
 });
