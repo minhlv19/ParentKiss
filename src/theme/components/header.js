@@ -21,9 +21,12 @@ export class Logo extends React.Component{
     }
 }
 export class MenuButton extends React.Component {
+
     render() {
         return (
-            <TouchableOpacity onPress = {this.props.onPress} ><Image
+            <TouchableOpacity onPress = {this.props.onPress} >
+
+                <Image
             source={require('../../asset/images/drawer.png')}
             style={{width:50,height:50}}
             /></TouchableOpacity>
