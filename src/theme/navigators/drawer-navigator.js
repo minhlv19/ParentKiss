@@ -40,7 +40,7 @@ const CustomDrawer = (props) => (
                 <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82', marginLeft: 10}}>K3 PRO</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{flex: 1, marginLeft: 15, flexDirection: 'row'}} onPress={() => <NameNotificationNavigator/>}>
+            <TouchableOpacity style={{flex: 1, marginLeft: 15, flexDirection: 'row'}} onPress={() =>props.navigation.navigate('NameNotificationNavigator') }>
                 <Image style={{height: 25, width: 25}} source={require('../../asset/images/house.png')}/>
                 <Text style={{fontSize: 20, fontWeight: 'bold', color: '#86fa82', marginLeft: 10}}>Notification
                     History</Text>
