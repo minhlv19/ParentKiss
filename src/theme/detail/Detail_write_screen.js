@@ -31,7 +31,6 @@ class DetailWriteScreen extends Component {
                         borderRadius: 10,
 
                         alignItems:'center'
-
                     }}>
                         <Image style={{marginLeft: 5, height: 30, width: 30,padding: 5}}
                                source={require('../../asset/images/school.png')}/>
@@ -47,15 +46,11 @@ class DetailWriteScreen extends Component {
                         <Text>
                             Chọn loại ghi chú *
                         </Text>
-
                     </View>
                     <View>
                         <View>
-
                         </View>
                     </View>
-
-
                 </View>
             </ScrollView>
 
