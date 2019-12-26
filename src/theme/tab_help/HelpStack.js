@@ -4,8 +4,6 @@ import HomeHelp from "./Home_Help";
 import VideoHelp from "./Video_Help";
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from "react-navigation-stack";
-import {Image, TouchableOpacity} from "react-native";
-import {Logo} from "../components/header";
 
 const Helpstack = createMaterialTopTabNavigator(
     {

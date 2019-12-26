@@ -10,7 +10,6 @@ class WriteSchool extends Component {
             headerTitle: <Logo/>,
             headerBackTitle: "Home",
             headerLayoutPreset: "center",
-
         };
     };
     constructor(props) {
@@ -26,7 +25,7 @@ class WriteSchool extends Component {
                         {/*<Text>SDFGHJK</Text>*/}
                     </View>
                     <TouchableOpacity style={styles.buttonTouchableOpacity}
-                    onPress={()=>this.props.navigation.navigate('DetailWriteScreen')}>
+                   >
                         <View style={styles.buttonTouchableOpacityView}>
                             <Text style={styles.styletext}>+</Text>
                         </View>
