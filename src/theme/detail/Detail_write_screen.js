@@ -113,6 +113,7 @@ class DetailWriteScreen extends Component {
 
                             />
                         </View>
+                        <Text>sfdghjm</Text>
                     </View>
                 </View>
             </ScrollView>
