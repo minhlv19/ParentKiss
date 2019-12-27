@@ -41,7 +41,7 @@ export const PaymentsNavigator = createStackNavigator({
 });
 export const WriteSchoolNavigator = createStackNavigator({
     WriteSchool: { screen: WriteSchool },
-
+    DetailWriteScreen:{screen:DetailWriteScreen}
 
 },
     {
