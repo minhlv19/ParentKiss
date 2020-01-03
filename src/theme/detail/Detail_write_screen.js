@@ -53,6 +53,7 @@ class DetailWriteScreen extends Component {
     }
     GetBottomNavigationView = () => {
         this.setState({visible: !this.state.visible});
+        this.setState({visible: !this.state.visible});
     };
 
     render() {
