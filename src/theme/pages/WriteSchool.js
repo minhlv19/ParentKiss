@@ -10,7 +10,6 @@ class WriteSchool extends Component {
             headerTitle: <Logo/>,
             headerBackTitle: "Home",
             headerLayoutPreset: "center",
-
         };
     };
     constructor(props) {

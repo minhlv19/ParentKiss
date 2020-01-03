@@ -93,7 +93,7 @@ export const TestNotificationNavigator = createStackNavigator({
     TestNotification: { screen: TestNotification }
 });
 export const NotificationNavigator = createStackNavigator({
-    Notification: { screen: Notification }
+    Notification: { screen: Notification}
 });
 
 //Fregment
